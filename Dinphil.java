@@ -16,4 +16,35 @@ class Dinphil{
         sc = new Scanner(System.in);
         
     }
+
+    public static void main(String... args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Documentation
+        System.out.println("It is a typical IPC problem with n number of philosophers in round table.");
+        System.out.println("They will either eat or think.");
+        System.out.println("They can only eat if their left and right forks are empty");
+        
+        System.out.println("\nLet's start the simulation...");
+
+        System.out.println("\n\nEnter number of philosophers :");
+        int n = sc.nextInt();
+
+        Dinphil dp = new Dinphil(n);
+        boolean don = true;
+        while(don){
+            System.out.println("\nEnter : \n1 to check status of philosophers.\n2 to change status.\n3 to exit");
+            int ch = sc.nextInt();
+
+            switch(ch){
+                case 3:don = false;break;
+
+                case 1:dp.display();break;
+
+                case 2:dp.status();break;
+
+                default:System.out.println("Invalid choice...");
+            }
+        }
+    }
 }
