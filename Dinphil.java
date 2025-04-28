@@ -25,16 +25,16 @@ class Dinphil{
         }
     }
 
-     void status(){
+     void status(){ // Change status of the philosopher
             System.out.print("\nEnter philosopher's number : ");
             int num = sc.nextInt();
             num -= 1;
             int left=(num + n - 1)%n;
             int right=(num + 1)%n;
-            if (state[num] != 3){ 
+            if (state[num] != 3){ // If he is not eating
                 state[num] = 1;
                 
-                if (state[left] != 3 && state[right] != 3){ 
+                if (state[left] != 3 && state[right] != 3){ // If left and right are not eating
                     state[num] = 3;
                     System.out.println("\nPhilosopher " + (num+1) + " is now eating.");
                 }
@@ -45,10 +45,10 @@ class Dinphil{
                 else// If both are eating
                 System.out.println("\nBoth left and right philosopher is eating so " + (num+1) + " is hungry.");
             }
-            else{ 
+            else{ // If philosopher wants to stop eating
                 state[num] = 0;
                 System.out.println("\nPhilosopher " + (num+1) + " stopped eating so now he is thinking.");
-                verify(left);
+                verify(left); // Check if adjacent philophers are hungry or not.
                 verify(right);
             }
             
