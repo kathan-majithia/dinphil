@@ -24,6 +24,24 @@ class Dinphil{
             System.out.println(i+1 + "\t" + match(state[i]));
         }
     }
+
+     void status(){
+            System.out.print("\nEnter philosopher's number : ");
+            int num = sc.nextInt();
+            num -= 1;
+            int left=(num + n - 1)%n;
+            int right=(num + 1)%n;
+            if (state[num] != 3){ 
+                state[num] = 1;
+                
+                if (state[left] != 3 && state[right] != 3){ 
+                    state[num] = 3;
+                    System.out.println("\nPhilosopher " + (num+1) + " is now eating.");
+                }
+            }
+            
+            
+        }
     
 
     public static void main(String... args) {
