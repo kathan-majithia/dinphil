@@ -17,6 +17,15 @@ class Dinphil{
         
     }
 
+    void display(){
+        System.out.println("\n\n-------------------------------------------");
+        System.out.println("Number\tStatus\n");
+        for(int i=0;i<n;i++){
+            System.out.println(i+1 + "\t" + match(state[i]));
+        }
+    }
+    
+
     public static void main(String... args) {
         Scanner sc = new Scanner(System.in);
 
