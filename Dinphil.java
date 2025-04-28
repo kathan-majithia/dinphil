@@ -45,6 +45,12 @@ class Dinphil{
                 else// If both are eating
                 System.out.println("\nBoth left and right philosopher is eating so " + (num+1) + " is hungry.");
             }
+            else{ 
+                state[num] = 0;
+                System.out.println("\nPhilosopher " + (num+1) + " stopped eating so now he is thinking.");
+                verify(left);
+                verify(right);
+            }
             
             
         }
