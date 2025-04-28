@@ -38,6 +38,12 @@ class Dinphil{
                     state[num] = 3;
                     System.out.println("\nPhilosopher " + (num+1) + " is now eating.");
                 }
+            else if(state[left] != 3) // If right is eating
+                System.out.println("\nRight philosopher is eating so " + (num+1) + " is hungry.");
+                else if(state[right] != 3)// If left is eating
+                System.out.println("\nLeft philosopher is eating so " + (num+1) + " is hungry.");
+                else// If both are eating
+                System.out.println("\nBoth left and right philosopher is eating so " + (num+1) + " is hungry.");
             }
             
             
