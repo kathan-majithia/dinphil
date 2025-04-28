@@ -25,6 +25,18 @@ class Dinphil{
         }
     }
 
+    void verify(int num){
+        
+        int left=(num + n - 1)%n;
+        int right=(num + 1)%n;
+        if (state[num] == 1){
+            if (state[left] != 3 && state[right] != 3){   
+                state[num] = 3;
+                System.out.println("\nPhilosopher " + (num+1) + " is now eating.");
+            }
+        }
+    }
+
      void status(){ // Change status of the philosopher
             System.out.print("\nEnter philosopher's number : ");
             int num = sc.nextInt();
