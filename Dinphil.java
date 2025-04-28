@@ -16,15 +16,26 @@ class Dinphil{
         sc = new Scanner(System.in);
         
     }
+    
+    String match(int i){ // Return status of the philosopher
+        if (i == 0)
+            return "Thinking";
+        else if(i == 1)
+            return "Hungry";
+        else if(i == 3)
+            return "Eating";        
 
-    void display(){
+        return "";
+    }
+        
+    void display(){ // Display philosopher number with status
         System.out.println("\n\n-------------------------------------------");
         System.out.println("Number\tStatus\n");
         for(int i=0;i<n;i++){
             System.out.println(i+1 + "\t" + match(state[i]));
         }
     }
-
+    
     void verify(int num){
         
         int left=(num + n - 1)%n;
@@ -37,7 +48,7 @@ class Dinphil{
         }
     }
 
-     void status(){ // Change status of the philosopher
+        void status(){ // Change status of the philosopher
             System.out.print("\nEnter philosopher's number : ");
             int num = sc.nextInt();
             num -= 1;
@@ -66,8 +77,7 @@ class Dinphil{
             
             
         }
-    
-
+        
     public static void main(String... args) {
         Scanner sc = new Scanner(System.in);
 
