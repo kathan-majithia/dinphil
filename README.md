@@ -16,7 +16,7 @@ hungry. </div>
 </div>
 <div>state – Status of the philosopher (Thinking, Hungry, or Eating) </div><br>
 <div>By default, all philosophers will think.</div><br>
-<div>There are two options: </div><br>
+<div>There are two options: </div>
 <h4>1) Check the status of the Philosopher: 
 </h4>
 <div>All philosophers will be displayed along with their status</div>
@@ -25,10 +25,22 @@ hungry. </div>
 do that, left and right philosophers should not be eating. If anyone is
 eating, then the philosopher will be left hungry. If the condition is
 correct, then the philosopher will start eating. 
-</div>
+</div><br>
 <div>In case a philosopher is eating and wants to think, it will be changed
 directly. But if left and right philosophers are hungry, then again
 condition will be checked for an empty fork and based on the condition
 2
 They will be allowed to eat. 
+</div>
+<h3>Key Components</h3>
+<h4>1. Display Method</h4>
+<div>
+  <ul>
+    <li>Whenever the user wants to see the status of all the philosophers, 
+this method will be called. </li>
+    <li>Each philosopher will be assigned a number starting from 1 to n. </li>
+    <li>State is an array consisting of n elements. The state of the
+philosophers will also be displayed along with it. 
+</li>
+  </ul>
 </div>
