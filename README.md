@@ -44,3 +44,15 @@ philosophers will also be displayed along with it.
 </li>
   </ul>
 </div>
+<h4>2. Status Method</h4>
+<div>
+  <ul>
+    <li>Users will be asked to enter philosopher numbers. If the number
+is inside the range of 1 to n, then it will check whether the
+philosopher is eating or thinking</li>
+    <li>If the philosopher is thinking then condition will be checked as
+mentioned above, and if the philosopher is eating then it will be
+directly converted into thinking. 
+</li>
+  </ul>
+</div>
