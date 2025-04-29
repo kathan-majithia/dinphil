@@ -27,9 +27,7 @@ eating, then the philosopher will be left hungry. If the condition is
 correct, then the philosopher will start eating. 
 </div><br>
 <div>In case a philosopher is eating and wants to think, it will be changed
-directly. But if left and right philosophers are hungry, then again
-condition will be checked for an empty fork and based on the condition
-2
+directly. But if left and right philosophers are hungry, then again the condition will be checked for an empty fork, and based on the condition 2
 They will be allowed to eat. 
 </div>
 <h3>Key Components</h3>
@@ -37,10 +35,10 @@ They will be allowed to eat.
 <div>
   <ul>
     <li>Whenever the user wants to see the status of all the philosophers, 
-this method will be called. </li>
+This method will be called. </li>
     <li>Each philosopher will be assigned a number starting from 1 to n. </li>
     <li>State is an array consisting of n elements. The state of the
-philosophers will also be displayed along with it. 
+Philosophers will also be displayed along with it. 
 </li>
   </ul>
 </div>
@@ -50,9 +48,18 @@ philosophers will also be displayed along with it.
     <li>Users will be asked to enter philosopher numbers. If the number
 is inside the range of 1 to n, then it will check whether the
 philosopher is eating or thinking</li>
-    <li>If the philosopher is thinking then condition will be checked as
-mentioned above, and if the philosopher is eating then it will be
+    <li>If the philosopher is thinking, then the condition will be checked as
+mentioned above, and if the philosopher is eating, then it will be
 directly converted into thinking. 
 </li>
+  </ul>
+</div>
+<h4>3. Verify Method</h4>
+<div>
+  <ul>
+    <li>For the philosopher who is changed to thinking, and if left or right
+philosopher is hungry, then this method will be called</li>
+    <li>Again, conditions will be checked for left and right. Then if the
+condition is satisfied, then it will be declared as eating. </li>
   </ul>
 </div>
