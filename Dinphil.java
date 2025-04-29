@@ -30,7 +30,7 @@ class Dinphil{
         
     void display(){ // Display philosopher number with status
         System.out.println("\n\n-------------------------------------------");
-        System.out.println("Number\tStatus\n");
+        System.out.println("Philosopher\tStatus\n");
         for(int i=0;i<n;i++){
             System.out.println(i+1 + "\t" + match(state[i]));
         }
