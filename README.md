@@ -63,3 +63,8 @@ philosopher is hungry, then this method will be called</li>
 condition is satisfied, then it will be declared as eating. </li>
   </ul>
 </div>
+<h3>Conclusion</h3>
+<div>To conclude, the concept of Dinning philosopher problem can easily be
+simulated with the help of Java by creating methods such as displaying status
+of the philosopher and changing status of philosophers from thinking to eating
+and vice versa. </div>
