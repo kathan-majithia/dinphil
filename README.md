@@ -1,7 +1,7 @@
 <h1>Dinning Philosopher problem</h1>
-<hr>
+
 <h3>Abstract</h3>
-<div>It is a classic synchronization problem in the context of Operating Systems and concurrent programming.</div><br>
+<div>It is a classic synchronization problem in the context of Operating Systems and concurrent programming.</div>
 <div>It illustrates the challenge of resource sharing and deadlock prevention by giving rights to eat to only those who have the left and right fork, which are free.</div>
 <h3>Overview</h3>
 <div>The Java program gives a visual representation of the Dinning Philosopher
